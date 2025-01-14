@@ -1,0 +1,6 @@
+@MarketPlace.CouponAPI_HostAddress = http://localhost:5277
+
+GET {{MarketPlace.CouponAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
