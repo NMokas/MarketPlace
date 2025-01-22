@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace MarketPlace.Cart.Models.Dto
+namespace MarketPlace.OrderAPI.Models.Dto
 {
     public class CartDetailsDto
     {

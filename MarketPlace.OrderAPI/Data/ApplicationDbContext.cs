@@ -1,8 +1,7 @@
-﻿using MarketPlace.Cart.Models;
-using MarketPlace.Cart.Models.Dto;
+﻿using MarketPlace.OrderAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace MarketPlace.Cart.Data
+namespace MarketPlace.OrderAPI.Data
 {
     public class ApplicationDbContext : DbContext
     {
@@ -11,8 +10,8 @@ namespace MarketPlace.Cart.Data
 
         }
 
-        public DbSet<CartDetails> CartDetails{ get; set; }
-        public DbSet<CartHeader> CartHeaders{ get; set; }
+        public DbSet<OrderDetails> OrderDetails{ get; set; }
+        public DbSet<OrderHeader> OrderHeaders{ get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

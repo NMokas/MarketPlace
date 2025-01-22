@@ -44,6 +44,7 @@ namespace MarketPlace.Cart.Controllers
                     await _db.SaveChangesAsync();
                     cartDto.CartDetails.First().CartHeaderId=cartHeader.CartHeaderId;
                     _db.CartDetails.Add(_mapper.Map<CartDetails>(cartDto.CartDetails.First()));
+                    await _db.SaveChangesAsync();
                 }
                 else
                 {
@@ -55,14 +56,13 @@ namespace MarketPlace.Cart.Controllers
                     if(cartDetailsFromDb == null)
                     {
                         cartDto.CartDetails.First().CartHeaderId=cartHeaderFromDb.CartHeaderId;
-                        _db.CartDetails.Add(_mapper.Map<CartDetails>(cartDto.CartDetails.First()));
+                        var auxCardDetails = _mapper.Map<CartDetails>(cartDto.CartDetails.First());
+                        _db.CartDetails.Add(auxCardDetails);
                         await _db.SaveChangesAsync();
                     }
                     else
                     {
                         cartDetailsFromDb.Count = +cartDto.CartDetails.First().Count;
-                        //cartDetailsFromDb.CartHeaderId = cartDto.CartHeader.CartHeaderId;
-                        //cartDetailsFromDb.CartDetailsId=cartDto.CartDetails.First().CartHeaderId;
                         _db.CartDetails.Update(cartDetailsFromDb);
                         await _db.SaveChangesAsync();
                     }
