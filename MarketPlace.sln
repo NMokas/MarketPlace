@@ -15,9 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketPlace.CouponAPI", "Ma
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketPlace.Gateway", "MarketPlace.Gateway\MarketPlace.Gateway.csproj", "{F1B2D68A-F12E-430C-962D-B0570A0DE4E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.OrderAPI", "MarketPlace.OrderAPI\MarketPlace.OrderAPI.csproj", "{C08D3C0C-5E93-43AC-9C3D-42A5A91D1FDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketPlace.OrderAPI", "MarketPlace.OrderAPI\MarketPlace.OrderAPI.csproj", "{C08D3C0C-5E93-43AC-9C3D-42A5A91D1FDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.Cart", "MarketPlace.Cart\MarketPlace.Cart.csproj", "{0815C8B3-668C-4B47-8D30-29712932D86B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketPlace.Cart", "MarketPlace.Cart\MarketPlace.Cart.csproj", "{0815C8B3-668C-4B47-8D30-29712932D86B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.EmailSender", "MarketPlace.EmailSender\MarketPlace.EmailSender.csproj", "{33579D26-5620-4560-8FC4-C77CEF1CC35C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.EmailBrokerAPI", "MarketPlace.EmailBrokerAPI\MarketPlace.EmailBrokerAPI.csproj", "{F5C0A93B-24B5-4B6C-B2EB-21FC24318CD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{0815C8B3-668C-4B47-8D30-29712932D86B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0815C8B3-668C-4B47-8D30-29712932D86B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0815C8B3-668C-4B47-8D30-29712932D86B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33579D26-5620-4560-8FC4-C77CEF1CC35C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33579D26-5620-4560-8FC4-C77CEF1CC35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33579D26-5620-4560-8FC4-C77CEF1CC35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33579D26-5620-4560-8FC4-C77CEF1CC35C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5C0A93B-24B5-4B6C-B2EB-21FC24318CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5C0A93B-24B5-4B6C-B2EB-21FC24318CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5C0A93B-24B5-4B6C-B2EB-21FC24318CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5C0A93B-24B5-4B6C-B2EB-21FC24318CD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

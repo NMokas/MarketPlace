@@ -1,0 +1,6 @@
+@MarketPlace.EmailBrokerAPI_HostAddress = http://localhost:5133
+
+GET {{MarketPlace.EmailBrokerAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
